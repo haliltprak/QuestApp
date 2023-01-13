@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import com.project.questapp.entity.User;
-import com.project.questapp.repos.UserRepository;
 
 @RestController
 @RequestMapping("/users")
