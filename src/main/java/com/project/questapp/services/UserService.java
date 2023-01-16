@@ -4,7 +4,6 @@ import com.project.questapp.entity.User;
 import com.project.questapp.repos.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -26,7 +25,7 @@ public class UserService {
         return userRepository.save(newUser);
     }
 
-    public User getOneUser( Long userId) {
+    public User getOneUserById(Long userId) {
         return userRepository.findById(userId).orElse(null);
     }
 

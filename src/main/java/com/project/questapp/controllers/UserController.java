@@ -1,7 +1,6 @@
 package com.project.questapp.controllers;
 
 import java.util.List;
-import java.util.Optional;
 
 import com.project.questapp.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +31,7 @@ public class UserController {
 	
 	@GetMapping("/{userId}")
 	public User getOneUser(@PathVariable  Long userId) {
-		return userService.getOneUser(userId);
+		return userService.getOneUserById(userId);
 	}
 	
 	@PutMapping("/{userId}")
